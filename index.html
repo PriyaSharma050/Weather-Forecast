@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forecast</title>
+    <link rel="stylesheet" href="weather forecast.css">
+</head>
+<body id="indexBody">
+  
+  <header>
+    <nav class="page">
+    <ul class="pages">
+    <li><img src="images/logo.png" height="35" alt="Weather forecast logo"></li>
+    <li><a href="index.html" class="page1" id="home">Today</a></li> 
+    <li><a href="week.html" class="page1" id="weekNav">Week</a></li>
+    <li><a href="map.html" class="page1" id="mapNav">Map</a></li>
+    <li><a href="cities.html" class="page1" id="citiesNav">Cities</a></li>
+    <li><a href="contact.html" class="page1" id="contactNav">Contact Us</a></li>
+    </ul>
+    </nav>
+  </header>
+  
+    
+  <div class="search-container ">
+    <form id="search">
+      <select class="city-dropdown">
+        
+        <option value="" disabled selected>Search your city</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+      </select>
+    </form>
+
+    <!-- <i class="fa fa-search"></i> -->
+
+    <!-- <div class="container">
+      <div class="weather-input"
+    </div> -->
+
+    <!-- <select id="converter">
+      <option>C</option>
+      <option>F</option>
+    </select>
+  </div> -->
+
+  
+
+     <div id="container">
+     <br>
+       <div id="mainInfo">
+         <div class="weatherIcon">
+         
+         </div>
+         <h2 class="temperature"></h2>
+         <div class="chanceOfRain"></div>
+         <div class="description"></div>
+         <div class="date"></div>
+         <div class="city"></div>
+        </div>
+      
+    
+     <div class="weather-output">
+      <h2 class="sec-heading">TODAY'S FORECAST</h2>
+       <div id="time-forecast">
+      
+         <dl class="weather-conditions">
+
+           <div class="air-conditions  time">
+             <dt>3:00AM</dt>
+             <dd id="threeAm">Loading...</dd>
+           </div>
+
+            <div class="air-conditions  time">
+             <dt>6:00AM</dt>
+             <dd id="sixAm">Loading...</dd>
+            </div>
+
+            <div class="air-conditions  time">
+             <dt>9:00AM</dt>
+             <dd id="nineAm">Loading...</dd>
+            </div>
+
+            <div class="air-conditions  time">
+             <dt>12:00Pm</dt>
+             <dd id="twelvePm">Loading...</dd>
+            </div>
+
+            <div class="air-conditions  time">
+             <dt>3:00PM</dt>
+             <dd id="threePm">Loading...</dd>
+            </div>
+
+           <div class="air-conditions  time">
+             <dt>6:00PM</dt>
+             <dd id="sixPm">Loading...</dd>
+           </div>
+
+        <div class="air-conditions  time">
+          <dt>9:00PM</dt>
+          <dd id="ninePm">Loading...</dd>
+        </div>
+
+        <div class="air-conditions  time">
+          <dt>12:00AM</dt>
+          <dd id="twelveAm">Loading...</dd>
+        </div>
+      </dl>
+    </div>
+
+    <h2  class="sec-heading">AIR CONDITIONS</h2>
+    <div id="conditions">
+      
+      <dl class="weather-conditions">
+
+        <div class="air-conditions">
+          <dt> <img src="images/Sunrise.png" height="16" alt="Sunrise icon">Sunrise</dt>
+          <dd id="Sunrise">Loading...</dd>
+        </div>
+        
+        <div class="air-conditions">
+          <dt> <img src="images/real_feel.png" height="16" alt="Real-feel icon"> Real feel</dt>
+          <dd id="Real-feel">Loading...</dd>
+        </div>
+        
+        <div class="air-conditions">
+          <dt><img src="images/Wind.png" height="14" alt="Wind icon"> Wind</dt>
+          <dd id="Wind">Loading...</dd>
+        </div>
+         
+        <div class="air-conditions">
+          <dt><img src="images/pressure.png" height="18" alt="Pressure icon"> Pressure</dt>
+          <dd id="Pressure">Loading...</dd>
+        </div>
+        
+        <div class="air-conditions">
+          <dt><img src="images/humidity.png" height="18" alt="Humidity icon"> Humidity</dt>
+          <dd id="Humidity">Loading...</dd>
+        </div>
+
+        <div class="air-conditions">
+          <dt><img src="images/visibility.png" height="18" alt="Visibility icon"> Visibility</dt>
+          <dd id="Visibility">Loading...</dd>
+        </div>
+
+        <div class="air-conditions">
+          <dt><img src="images/UV.png" height="18" alt="UV Index icon"> UV Index</dt>
+          <dd id="UV Index">Loading...</dd>
+        </div>
+
+        <div class="air-conditions">
+          <dt> <img src="images/Sunset.png" height="16" alt="Sunset icon"> Sunset</dt>
+          <dd id="Sunset">Loading...</dd>
+        </div>
+
+      </dl>
+    </div>
+    </div>
+  </div>
+  </div>
+  <script src="weather forecast.js"></script>
+</body>
+</html>
