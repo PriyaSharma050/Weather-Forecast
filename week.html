@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week</title>
-    <link rel="stylesheet" href="weather forecast.css">
-</head>
-<body id="week">
+    <link rel="stylesheet" href="weather forecast.css" />
+  </head>
+  <body id="week">
     <header>
-        <nav class="page">
+      <nav class="page">
         <ul class="pages">
-        <li><img src="images/logo.png" height="35" alt="Weather forecast logo"></li>
-        <li><a href="index.html" class="page1">Today</a></li> 
-        <li><a href="week.html" class="page1">Week</a></li>
-        <li><a href="map.html" class="page1">Map</a></li>
-        <li><a href="cities.html" class="page1">Cities</a></li>
-        <li><a href="contact.html" class="page1"  >Contact Us</a></li>
+          <li>
+            <img
+              src="images/logo.png"
+              height="35"
+              alt="Weather forecast logo"
+            />
+          </li>
+          <li><a href="index.html" class="page1">Today</a></li>
+          <li><a href="week.html" class="page1 active">Week</a></li>
+          <li><a href="map.html" class="page1">Map</a></li>
+          <li><a href="cities.html" class="page1">Cities</a></li>
+          <li><a href="contact.html" class="page1">Contact Us</a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
 
-    <div class="search-container "></div>
-        <form id="search">
-          <select class="city-dropdown">
-            
-            <option value="" disabled selected>Search your city</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Kolkata">Kolkata</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Pune">Pune</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-          </select>
-        </form>
+    <div class="search-container search-container-others">
+      <form id="search">
+        <select class="city-dropdown" id="cityDropdown">
+          <option value="" disabled selected>Search your city</option>
+        </select>
+      </form>
     </div>
-
 
     <div id="weekDiv">
-        <div id="week_1">
-            <div id="mainInfo">
-                <div class="weatherIcon">
-                
-                </div>
-                <h2 class="temperature"></h2>
-                <div class="chanceOfRain"></div>
-                <div class="description"></div>
-                <div class="date"></div>
-                <div class="city"></div>
-            </div>
-        </div> 
-        <div id="week_2">
-            <h3> 7-day Forecast</h3>
-            <div id="weekContainer">
-             <div id="boxN1">
-                 <div class="box">Box 1</div>
-                 <div class="box">Box 2</div>
-                 <div class="box">Box 3</div>
-                 <div class="box">Box 4</div>
-              </div>
-              <div id="boxN2">
-                <div class="box">Box 5</div>
-                <div class="box">Box 6</div>
-                <div class="box">Box 7</div>
-              </div>
-            </div>
+      <div id="week_1">
+        <div class="mapNweek">
+          <div class="mapNweekMainTemp">
+            <h2 id="temperature" class=" mapNweekTemp"></h2>
+            <div id="chanceOfRain " class="mapNweekRain">Chance of Rain </div>
+            <div  id="description" class="mapNweekDescrip"></div>
+            <div id="date" class=" mapNweekDate"></div>
+            <div id="city" class=" mapNweekCity"></div>
+          </div>
+          <div id="weatherIcon" class="mapNweekIcon">
+            <!-- <img src="images/sunny.png" height="170px" alt="weatherIcon" /> -->
+          </div>
         </div>
-            
-            
-        </div> 
+      </div>
+      <div id="week_2">
+        <h3>7-day Forecast</h3>
+        <div id="weekContainer">
+          <div id="boxN1">
+            <div class="box forecast-day" id="day1"></div>
+            <div class="box forecast-day" id="day2"></div>
+            <div class="box forecast-day" id="day3"></div>
+            <div class="box forecast-day" id="day4"></div>
+          </div>
+          <div id="boxN2">
+            <div class="box forecast-day" id="day5"></div>
+            <div class="box forecast-day" id="day6"></div>
+            <div class="box forecast-day" id="day7"></div>
+          </div>
+        </div>
+      </div>
     </div>
-   
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="citiesList.js"></script>
     <script src="weather forecast.js"></script>
-</body>
+  </body>
 </html>
